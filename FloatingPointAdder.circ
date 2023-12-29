@@ -3,6 +3,7 @@
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
+      <a name="facing" val="north"/>
       <a name="incoming" val="32"/>
       <a name="appear" val="center"/>
       <a name="bit1" val="0"/>
@@ -121,13 +122,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
     <sep/>
     <tool lib="0" name="Pin">
-      <a name="width" val="32"/>
+      <a name="width" val="8"/>
       <a name="tristate" val="false"/>
     </tool>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="5"/>
+      <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
     </tool>
     <tool lib="1" name="NOT Gate"/>
@@ -2167,6 +2168,84 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="value" val="0x1f"/>
     </comp>
     <comp lib="0" loc="(410,390)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+    </comp>
+  </circuit>
+  <circuit name="pick sort">
+    <a name="circuit" val="pick sort"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(330,160)" to="(390,160)"/>
+    <wire from="(310,180)" to="(310,200)"/>
+    <wire from="(310,260)" to="(310,280)"/>
+    <wire from="(390,140)" to="(390,160)"/>
+    <wire from="(340,200)" to="(340,280)"/>
+    <wire from="(170,360)" to="(210,360)"/>
+    <wire from="(170,320)" to="(210,320)"/>
+    <wire from="(310,280)" to="(310,310)"/>
+    <wire from="(250,360)" to="(290,360)"/>
+    <wire from="(250,320)" to="(290,320)"/>
+    <wire from="(240,250)" to="(280,250)"/>
+    <wire from="(240,150)" to="(280,150)"/>
+    <wire from="(170,230)" to="(260,230)"/>
+    <wire from="(310,200)" to="(340,200)"/>
+    <wire from="(310,280)" to="(340,280)"/>
+    <wire from="(240,150)" to="(240,250)"/>
+    <wire from="(260,170)" to="(280,170)"/>
+    <wire from="(260,230)" to="(280,230)"/>
+    <wire from="(390,140)" to="(400,140)"/>
+    <wire from="(310,370)" to="(310,420)"/>
+    <wire from="(260,170)" to="(260,230)"/>
+    <wire from="(170,150)" to="(240,150)"/>
+    <wire from="(330,240)" to="(400,240)"/>
+    <comp loc="(330,340)" name="ALU">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(250,360)" name="Bit Extender">
+      <a name="out_width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(170,360)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="KeyB"/>
+    </comp>
+    <comp loc="(330,160)" name="32 bit num select"/>
+    <comp lib="0" loc="(170,320)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="KeyA"/>
+    </comp>
+    <comp lib="0" loc="(170,230)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(250,320)" name="Bit Extender">
+      <a name="out_width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(400,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Smaller"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(170,150)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(400,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Larger"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(330,240)" name="32 bit num select"/>
+    <comp lib="0" loc="(310,420)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="2"/>
     </comp>
