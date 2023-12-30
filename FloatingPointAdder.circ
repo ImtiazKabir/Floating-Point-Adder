@@ -3,8 +3,9 @@
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
+      <a name="facing" val="west"/>
       <a name="fanout" val="3"/>
-      <a name="incoming" val="32"/>
+      <a name="incoming" val="28"/>
       <a name="appear" val="center"/>
       <a name="bit1" val="0"/>
       <a name="bit2" val="0"/>
@@ -15,7 +16,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit7" val="0"/>
       <a name="bit8" val="0"/>
       <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
+      <a name="bit10" val="1"/>
       <a name="bit11" val="1"/>
       <a name="bit12" val="1"/>
       <a name="bit13" val="1"/>
@@ -24,19 +25,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit16" val="1"/>
       <a name="bit17" val="1"/>
       <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
+      <a name="bit19" val="2"/>
+      <a name="bit20" val="2"/>
+      <a name="bit21" val="2"/>
       <a name="bit22" val="2"/>
       <a name="bit23" val="2"/>
       <a name="bit24" val="2"/>
       <a name="bit25" val="2"/>
       <a name="bit26" val="2"/>
       <a name="bit27" val="2"/>
-      <a name="bit28" val="2"/>
-      <a name="bit29" val="2"/>
-      <a name="bit30" val="2"/>
-      <a name="bit31" val="2"/>
     </tool>
     <tool name="Tunnel">
       <a name="label" val="A"/>
@@ -4383,7 +4380,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(150,120)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="Exoponent"/>
+      <a name="label" val="Expoonent"/>
     </comp>
     <comp lib="0" loc="(310,210)" name="Constant">
       <a name="value" val="0x0"/>
@@ -4603,5 +4600,242 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="east"/>
     </comp>
     <comp loc="(330,200)" name="16 bit LS with ENB"/>
+  </circuit>
+  <circuit name="RS Normalizer">
+    <a name="circuit" val="RS Normalizer"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="100" x="140" y="60"/>
+      <path d="M239,70 Q230,75 240,79" fill="none" stroke="#808080" stroke-width="2"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="183" y="78">RS Normalizer</text>
+      <circ-port height="8" pin="90,80" width="8" x="206" y="56"/>
+      <circ-port height="8" pin="150,120" width="8" x="186" y="56"/>
+      <circ-port height="8" pin="150,190" width="8" x="166" y="56"/>
+      <circ-port height="8" pin="100,260" width="8" x="146" y="56"/>
+      <circ-port height="10" pin="560,30" width="10" x="225" y="85"/>
+      <circ-port height="10" pin="560,90" width="10" x="205" y="85"/>
+      <circ-port height="10" pin="500,120" width="10" x="185" y="85"/>
+      <circ-port height="10" pin="500,170" width="10" x="165" y="85"/>
+      <circ-port height="10" pin="550,220" width="10" x="145" y="85"/>
+      <circ-anchor facing="south" height="6" width="6" x="227" y="87"/>
+    </appear>
+    <wire from="(250,50)" to="(250,120)"/>
+    <wire from="(250,50)" to="(300,50)"/>
+    <wire from="(380,100)" to="(380,110)"/>
+    <wire from="(470,200)" to="(470,220)"/>
+    <wire from="(490,170)" to="(490,190)"/>
+    <wire from="(470,90)" to="(470,180)"/>
+    <wire from="(150,190)" to="(250,190)"/>
+    <wire from="(150,120)" to="(250,120)"/>
+    <wire from="(450,80)" to="(490,80)"/>
+    <wire from="(530,30)" to="(530,70)"/>
+    <wire from="(470,90)" to="(560,90)"/>
+    <wire from="(400,70)" to="(430,70)"/>
+    <wire from="(460,190)" to="(490,190)"/>
+    <wire from="(230,80)" to="(230,180)"/>
+    <wire from="(330,190)" to="(360,190)"/>
+    <wire from="(270,190)" to="(290,190)"/>
+    <wire from="(340,90)" to="(360,90)"/>
+    <wire from="(340,50)" to="(360,50)"/>
+    <wire from="(420,190)" to="(440,190)"/>
+    <wire from="(530,30)" to="(560,30)"/>
+    <wire from="(230,180)" to="(250,180)"/>
+    <wire from="(230,200)" to="(250,200)"/>
+    <wire from="(490,80)" to="(490,120)"/>
+    <wire from="(460,180)" to="(470,180)"/>
+    <wire from="(460,200)" to="(470,200)"/>
+    <wire from="(490,120)" to="(500,120)"/>
+    <wire from="(490,170)" to="(500,170)"/>
+    <wire from="(90,80)" to="(230,80)"/>
+    <wire from="(450,70)" to="(530,70)"/>
+    <wire from="(470,220)" to="(550,220)"/>
+    <wire from="(230,200)" to="(230,260)"/>
+    <wire from="(100,260)" to="(230,260)"/>
+    <comp lib="0" loc="(500,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="new Exponent"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(340,90)" name="Constant">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(340,50)" name="Bit Extender">
+      <a name="out_width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(150,120)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Exponent"/>
+    </comp>
+    <comp lib="0" loc="(270,190)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="28"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="2"/>
+      <a name="bit1" val="2"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="0"/>
+      <a name="bit27" val="0"/>
+    </comp>
+    <comp lib="0" loc="(560,30)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Overflow"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(150,190)" name="Pin">
+      <a name="width" val="23"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Significand"/>
+    </comp>
+    <comp lib="0" loc="(550,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="new GRS"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(380,110)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(500,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="23"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="new Significant"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(100,260)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="GRS"/>
+    </comp>
+    <comp lib="0" loc="(430,70)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="2"/>
+      <a name="bit1" val="2"/>
+      <a name="bit3" val="2"/>
+      <a name="bit4" val="2"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="2"/>
+      <a name="bit7" val="2"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="none"/>
+      <a name="bit10" val="none"/>
+      <a name="bit11" val="none"/>
+      <a name="bit12" val="none"/>
+      <a name="bit13" val="none"/>
+      <a name="bit14" val="none"/>
+      <a name="bit15" val="none"/>
+      <a name="bit16" val="none"/>
+      <a name="bit17" val="none"/>
+      <a name="bit18" val="none"/>
+      <a name="bit19" val="none"/>
+      <a name="bit20" val="none"/>
+      <a name="bit21" val="none"/>
+      <a name="bit22" val="none"/>
+      <a name="bit23" val="none"/>
+      <a name="bit24" val="none"/>
+      <a name="bit25" val="none"/>
+      <a name="bit26" val="none"/>
+      <a name="bit27" val="none"/>
+      <a name="bit28" val="none"/>
+      <a name="bit29" val="none"/>
+      <a name="bit30" val="none"/>
+      <a name="bit31" val="none"/>
+    </comp>
+    <comp lib="0" loc="(560,90)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="new Pre Radix"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(420,190)" name="1 bit right shifter"/>
+    <comp lib="0" loc="(90,80)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Pre Radix"/>
+    </comp>
+    <comp lib="0" loc="(440,190)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="3"/>
+      <a name="bit1" val="3"/>
+      <a name="bit2" val="3"/>
+      <a name="bit3" val="2"/>
+      <a name="bit4" val="2"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="2"/>
+      <a name="bit7" val="2"/>
+      <a name="bit8" val="2"/>
+      <a name="bit9" val="2"/>
+      <a name="bit10" val="2"/>
+      <a name="bit11" val="2"/>
+      <a name="bit12" val="2"/>
+      <a name="bit13" val="2"/>
+      <a name="bit14" val="2"/>
+      <a name="bit15" val="2"/>
+      <a name="bit16" val="2"/>
+      <a name="bit17" val="2"/>
+      <a name="bit18" val="2"/>
+      <a name="bit19" val="2"/>
+      <a name="bit20" val="2"/>
+      <a name="bit21" val="2"/>
+      <a name="bit22" val="2"/>
+      <a name="bit23" val="2"/>
+      <a name="bit24" val="2"/>
+      <a name="bit25" val="2"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="none"/>
+      <a name="bit29" val="none"/>
+      <a name="bit30" val="none"/>
+      <a name="bit31" val="none"/>
+    </comp>
+    <comp loc="(400,70)" name="ALU">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(330,190)" name="Bit Extender">
+      <a name="in_width" val="28"/>
+      <a name="out_width" val="32"/>
+    </comp>
   </circuit>
 </project>
