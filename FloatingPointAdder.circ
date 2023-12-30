@@ -4186,46 +4186,46 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(490,20)" to="(670,20)"/>
     <wire from="(500,220)" to="(500,230)"/>
     <wire from="(490,90)" to="(490,100)"/>
-    <wire from="(490,20)" to="(490,30)"/>
-    <wire from="(560,60)" to="(600,60)"/>
-    <wire from="(580,80)" to="(580,170)"/>
     <wire from="(230,80)" to="(230,170)"/>
-    <wire from="(180,190)" to="(180,220)"/>
-    <wire from="(180,230)" to="(180,260)"/>
     <wire from="(280,230)" to="(320,230)"/>
-    <wire from="(580,190)" to="(580,210)"/>
     <wire from="(600,160)" to="(600,180)"/>
     <wire from="(460,230)" to="(500,230)"/>
     <wire from="(150,190)" to="(180,190)"/>
-    <wire from="(230,180)" to="(260,180)"/>
     <wire from="(230,170)" to="(260,170)"/>
     <wire from="(530,180)" to="(550,180)"/>
-    <wire from="(510,60)" to="(540,60)"/>
-    <wire from="(380,230)" to="(410,230)"/>
     <wire from="(450,180)" to="(470,180)"/>
-    <wire from="(570,180)" to="(600,180)"/>
     <wire from="(450,80)" to="(470,80)"/>
     <wire from="(150,120)" to="(360,120)"/>
     <wire from="(360,80)" to="(360,120)"/>
-    <wire from="(180,220)" to="(200,220)"/>
     <wire from="(180,230)" to="(200,230)"/>
-    <wire from="(580,80)" to="(670,80)"/>
     <wire from="(450,230)" to="(460,230)"/>
     <wire from="(460,40)" to="(470,40)"/>
     <wire from="(100,260)" to="(180,260)"/>
-    <wire from="(230,180)" to="(230,230)"/>
     <wire from="(310,210)" to="(320,210)"/>
-    <wire from="(220,230)" to="(230,230)"/>
     <wire from="(230,230)" to="(240,230)"/>
     <wire from="(90,80)" to="(230,80)"/>
     <wire from="(460,40)" to="(460,230)"/>
-    <wire from="(580,210)" to="(660,210)"/>
     <wire from="(280,180)" to="(410,180)"/>
     <wire from="(600,60)" to="(600,110)"/>
     <wire from="(570,170)" to="(580,170)"/>
     <wire from="(570,190)" to="(580,190)"/>
-    <wire from="(600,110)" to="(610,110)"/>
     <wire from="(600,160)" to="(610,160)"/>
+    <wire from="(490,20)" to="(490,30)"/>
+    <wire from="(560,60)" to="(600,60)"/>
+    <wire from="(580,80)" to="(580,170)"/>
+    <wire from="(180,190)" to="(180,220)"/>
+    <wire from="(180,230)" to="(180,260)"/>
+    <wire from="(580,190)" to="(580,210)"/>
+    <wire from="(230,180)" to="(260,180)"/>
+    <wire from="(510,60)" to="(540,60)"/>
+    <wire from="(380,230)" to="(410,230)"/>
+    <wire from="(570,180)" to="(600,180)"/>
+    <wire from="(180,220)" to="(200,220)"/>
+    <wire from="(580,80)" to="(670,80)"/>
+    <wire from="(230,180)" to="(230,230)"/>
+    <wire from="(220,230)" to="(230,230)"/>
+    <wire from="(580,210)" to="(660,210)"/>
+    <wire from="(600,110)" to="(610,110)"/>
     <comp lib="0" loc="(670,20)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -5146,7 +5146,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(240,640)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="LS OES"/>
+      <a name="label" val="RS OES"/>
     </comp>
     <comp lib="0" loc="(950,650)" name="Bit Extender">
       <a name="in_width" val="5"/>
@@ -5201,12 +5201,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(140,410)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="RS Normalization"/>
+      <a name="label" val="LS Normalization"/>
     </comp>
     <comp lib="0" loc="(650,640)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
-      <a name="label" val="RS PRGRS"/>
+      <a name="label" val="LS PRGRS"/>
     </comp>
     <comp lib="0" loc="(700,640)" name="Bit Extender">
       <a name="in_width" val="5"/>
@@ -5232,7 +5232,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(900,690)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="RS Normalization"/>
+      <a name="label" val="LS Normalization"/>
     </comp>
     <comp lib="0" loc="(740,150)" name="Tunnel">
       <a name="width" val="5"/>
@@ -5274,7 +5274,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(270,690)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="RS Normalization"/>
+      <a name="label" val="LS Normalization"/>
     </comp>
     <comp lib="0" loc="(720,60)" name="Splitter">
       <a name="facing" val="west"/>
@@ -5460,13 +5460,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(90,630)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="RS OES"/>
+      <a name="label" val="LS OES"/>
     </comp>
     <comp loc="(1020,630)" name="8 bit num select"/>
     <comp lib="0" loc="(880,650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
-      <a name="label" val="LS PRGRS"/>
+      <a name="label" val="RS PRGRS"/>
     </comp>
     <comp lib="0" loc="(700,600)" name="Bit Extender">
       <a name="in_width" val="5"/>
